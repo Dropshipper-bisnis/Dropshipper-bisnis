@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropshipper Bisnis | Mulai Usaha Tanpa Stok, Untung Maksimal</title>
+
+    <!-- === META PIXEL — ID: 1749308096341771 === -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1749308096341771');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1749308096341771&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- === END META PIXEL === -->
+
+    <!-- === GOOGLE ANALYTICS 4 — ID: G-SN5VJY66S2 === -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN5VJY66S2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SN5VJY66S2', {
+        send_page_view: true,
+        cookie_flags: 'SameSite=None;Secure'
+    });
+    </script>
+    <!-- === END GOOGLE ANALYTICS === -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#4f46e5',
+                        accent: '#f97316',
+                        dark: '#1e293b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.15); }
+            .card-shadow { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
+        }
+    </style>
+
+    <!-- === PASS-THROUGH & PELACAKAN KLIK === -->
+    <script>
+    function getCurrentQueryParams() {
+        return new URLSearchParams(window.location.search);
+    }
+
+    function buildDestinationLink(baseUrl) {
+        const params = getCurrentQueryParams();
+        const destUrl = new URL(baseUrl);
+        for (const [key, value] of params.entries()) {
+            if (!destUrl.searchParams.has(key)) {
+                destUrl.searchParams.append(key, value);
+            }
+        }
+        return destUrl.href;
+    }
+
+    function trackAndNavigate(e, linkText, position) {
+        e.preventDefault();
+        const link = e.currentTarget;
+        const finalUrl = buildDestinationLink(link.dataset.baseHref || link.href);
+
+        if (typeof gtag === "function") {
+            gtag("event", "click_cta", {
+                event_category: "Outbound Link",
+                event_label: linkText,
+                cta_position: position,
+                destination_url: finalUrl
+            });
+        }
+
+        if (typeof fbq === "function") {
+            fbq("track", "Lead", {
+                cta_text: linkText,
+                cta_position: position,
+                destination: finalUrl
+            });
+        }
+
+        setTimeout(() => {
+            window.open(finalUrl, "_blank", "noopener,noreferrer");
+        }, 150);
+    }
+    </script>
+</head>
+<body class="font-sans text-gray-700 bg-gray-50">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-[clamp(1.25rem,3vw,1.5rem)] font-bold text-white text-shadow">
+                    <span class="text-accent">Dropshipper</span> Bisnis
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#tentang" class="text-white hover:text-accent transition-colors">Tentang</a>
+                    <a href="#keunggulan" class="text-white hover:text-accent transition-colors">Keunggulan</a>
+                    <a href="#cara-kerja" class="text-white hover:text-accent transition-colors">Cara Kerja</a>
+                    <a href="#testimoni" class="text-white hover:text-accent transition-colors">Kisah Sukses</a>
+                    <a href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4" 
+                       data-base-href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4"
+                       onclick="trackAndNavigate(event, 'Daftar Sekarang', 'navbar')"
+                       class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-full font-bold transition-all transform hover:-translate-y-1">
+                       Daftar Sekarang
+                    </a>
+                </div>
+                
+                <button id="menuBtn" class="md:hidden text-white text-2xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute w-full mt-4 py-4 px-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#tentang" class="text-gray-700 hover:text-primary transition-colors">Tentang</a>
+                <a href="#keunggulan" class="text-gray-700 hover:text-primary transition-colors">Keunggulan</a>
+                <a href="#cara-kerja" class="text-gray-700 hover:text-primary transition-colors">Cara Kerja</a>
+                <a href="#testimoni" class="text-gray-700 hover:text-primary transition-colors">Kisah Sukses</a>
+                <a href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4" 
+                   data-base-href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4"
+                   onclick="trackAndNavigate(event, 'Daftar Sekarang', 'mobile_navbar')"
+                   class="bg-accent text-white px-6 py-2 rounded-full font-bold text-center">
+                   Daftar Sekarang
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center bg-gradient-to-br from-primary via-secondary to-indigo-700 text-white pt-20">
+        <div class="absolute inset-0 bg-black/25"></div>
+        <div class="container mx-auto px-4 md:px-6 relative z-10 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 max-w-2xl">
+                    <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold leading-tight text-shadow">
+                        Bangun Bisnis Sukses<br>
+                        <span class="text-accent">Tanpa Stok Barang</span>
+                    </h1>
+                    <p class="text-[clamp(1.1rem,2vw,1.3rem)] opacity-90 leading-relaxed">
+                        Mulai usaha online dengan sistem dropship — kami siapkan produk, stok, dan pengiriman. Anda fokus jual & untung. Risiko nol, potensi tak terbatas.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4" 
+                           data-base-href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4"
+                           onclick="trackAndNavigate(event, 'Mulai Bisnis Gratis', 'hero_utama')"
+                           class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-2 hover:shadow-xl">
+                           Mulai Bisnis Gratis <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#cara-kerja" 
+                           class="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-bold text-lg transition-all">
+                           <i class="fa fa-play-circle mr-2"></i> Lihat Cara Kerja
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="flex -space-x-3">
+                            <img src="https://picsum.photos/200/200?random=1" alt="Pengguna" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/200/200?random=2" alt="Pengguna" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/200/200?random=3" alt="Pengguna" class="w-10 h-10 rounded-full border-2 border-white">
+                            <img src="https://picsum.photos/200/200?random=4" alt="Pengguna" class="w-10 h-10 rounded-full border-2 border-white">
+                        </div>
+                        <div>
+                            <p class="font-bold">3.000+ Dropshipper</p>
+                            <p class="text-sm opacity-80">Sudah bergabung & menghasilkan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="https://picsum.photos/800/600?random=15" alt="Bisnis Tanpa Stok" class="rounded-xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4">Tentang Dropshipper Bisnis</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Mitra terpercaya untuk memulai usaha online tanpa risiko stok barang</p>
+                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://picsum.photos/600/450?random=12" alt="Tim Dropshipper Bisnis" class="rounded-lg shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-dark">Konsep Bisnis Paling Cerdas</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        <strong>Dropshipper Bisnis</strong> menyediakan platform lengkap di mana Anda bisa menjual ribuan produk tanpa perlu menyimpan stok. Kami mengurus penyimpanan, pengemasan, hingga pengiriman langsung ke pelanggan atas nama Anda.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Sistem ini memungkinkan Anda fokus pada pemasaran dan membangun hubungan dengan pelanggan, sementara kami menangani operasional. Modal kecil, risiko minim, peluang besar.
+                    </p>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                            <span>Produk berkualitas dari pemasok terverifikasi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                            <span>Harga kompetitif & margin keuntungan menarik</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check-circle text-accent mt-1 mr-3 text-lg"></i>
+                            <span>Dukungan penuh dari tim berpengalaman</span>
+                        </li>
+                    </ul>
+                    <a href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4" 
+                       data-base-href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4"
+                       onclick="trackAndNavigate(event, 'Mulai Sekarang', 'tentang_section')"
+                       class="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold hover:bg-accent/90 transition-all mt-2">
+                       Mulai Sekarang <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-20 bg-white">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4">Mengapa Memilih Kami?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Keunggulan yang membuat ribuan mitra bertahan & berkembang</p>
+                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-money text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Modal Sangat Kecil</h3>
+                    <p class="text-gray-600">Tidak perlu beli stok atau sewa gudang. Mulai dengan biaya minim, untung maksimal.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-truck text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pengiriman Otomatis</h3>
+                    <p class="text-gray-600">Kami kemas & kirim produk langsung ke pelanggan Anda dengan nama toko Anda.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-th-large text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Pilihan Produk Luas</h3>
+                    <p class="text-gray-600">Akses ratusan produk terbaik di berbagai kategori yang selalu diperbarui.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-mobile-phone text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Bisa dari HP Saja</h3>
+                    <p class="text-gray-600">Kelola bisnis kapan saja, di mana saja. Cukup lewat ponsel pintar Anda.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-line-chart text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Potensi Tak Terbatas</h3>
+                    <p class="text-gray-600">Skala bisnis sesuai usaha Anda. Semakin rajin promosi, semakin besar keuntungan.</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:shadow-xl transition-all hover:-translate-y-2">
+                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-shield text-accent text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Aman & Terpercaya</h3>
+                    <p class="text-gray-600">Sistem terjamin, pembayaran jelas, dukungan responsif setiap hari.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-14">
+                <a href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4" 
+                   data-base-href="https://mobileprofits.co/journey?aid=3486377&sub_id1=11&tid=67268fe185db4731844789c9e2b40da4"
+                   onclick="trackAndNavigate(event, 'Daftar & Mulai', 'keunggulan_section')"
+                   class="inline-block bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 hover:shadow-lg">
+                   Daftar & Mulai Sekarang <i class="fa fa-rocket ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja Section -->
+    <section id="cara-kerja" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.75rem,4vw,2.5rem)] font-bold text-dark mb-4">Cara Kerja Sangat Mudah</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Hanya 3 langkah sederhana untuk mulai menghasilkan</p>
+                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">1</div>
+                    <div class="pt-6 pb-4">
+                        <i class="fa fa-user-plus text-5xl text-accent/80 mb-5"></i>
+                        <h3 class="text-xl font-bold mb-3">Daftar Akun</h3>
+                        <p class="text-gray-600">Isi data diri secara gratis. Langsung dapat akses ke katalog produk lengkap.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl shadow-lg">2</div>
+                    <div class="pt-6 pb-4">
+                        <i class="fa fa-bullhorn text-5xl text-accent/80 mb-5"></i>
+                        <h3 class="text-xl font-bold mb-3">Promosikan Produk</h3>
+                        <p class="text-gray-600">Bagikan produk di media sosial atau jaringan Anda. Tetapkan harga jual sendiri.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
+                    <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-
