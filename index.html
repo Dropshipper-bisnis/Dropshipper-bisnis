@@ -22,8 +22,8 @@
     src="https://facebook.com/tr?id=1749308096341771&ev=PageView&noscript=1"
     /></noscript>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SN5VJY66S2"></script>
+    <!-- Google Analytics 4 — ID: G-CHSEF848XD -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHSEF848XD"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -55,14 +55,18 @@
         .card-shadow { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
     </style>
 
-    <!-- UTM Pass-Through & Click Tracking -->
+    <!-- UTM Pass-Through — Auto carry parameters to all destination links -->
     <script>
-    function getCurrentQueryParams() { return new URLSearchParams(window.location.search); }
+    function getCurrentQueryParams() {
+        return new URLSearchParams(window.location.search);
+    }
     function buildDestinationLink(baseUrl) {
         const params = getCurrentQueryParams();
         const destUrl = new URL(baseUrl);
-        for (const [k, v] of params.entries()) {
-            if (!destUrl.searchParams.has(k)) destUrl.searchParams.append(k, v);
+        for (const [key, value] of params.entries()) {
+            if (!destUrl.searchParams.has(key)) {
+                destUrl.searchParams.append(key, value);
+            }
         }
         return destUrl.href;
     }
@@ -79,9 +83,15 @@
             });
         }
         if (typeof fbq === "function") {
-            fbq("track", "Lead", { cta_text: label, cta_position: pos, destination: finalUrl });
+            fbq("track", "Lead", {
+                cta_text: label,
+                cta_position: pos,
+                destination: finalUrl
+            });
         }
-        setTimeout(() => window.open(finalUrl, "_blank", "noopener,noreferrer"), 150);
+        setTimeout(() => {
+            window.open(finalUrl, "_blank", "noopener,noreferrer");
+        }, 150);
     }
     </script>
 </head>
@@ -337,4 +347,20 @@
             navbar.classList.toggle('bg-primary', window.scrollY > 50);
             navbar.classList.toggle('shadow-md', window.scrollY > 50);
         });
-   
+        // Mobile menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                if (a.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+                    mobileMenu?.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
