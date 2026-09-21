@@ -22,16 +22,16 @@
     src="https://facebook.com/tr?id=1749308096341771&ev=PageView&noscript=1"
     /></noscript>
 
-    <!-- Google Analytics 4 — ID: G-CHSEF848XD -->
+    <!-- Google tag (gtag.js) — ID: G-CHSEF848XD -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHSEF848XD"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CHSEF848XD', {
-        send_page_view: true,
-        cookie_flags: 'SameSite=None;Secure'
-    });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CHSEF848XD', {
+          send_page_view: true,
+          cookie_flags: 'SameSite=None;Secure'
+      });
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -55,7 +55,7 @@
         .card-shadow { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
     </style>
 
-    <!-- UTM Pass-Through — Auto carry parameters to all destination links -->
+    <!-- UTM Pass-Through — Carry parameters to all destination links -->
     <script>
     function getCurrentQueryParams() {
         return new URLSearchParams(window.location.search);
@@ -343,24 +343,4 @@
     <script>
         // Navbar scroll effect
         const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            navbar.classList.toggle('bg-primary', window.scrollY > 50);
-            navbar.classList.toggle('shadow-md', window.scrollY > 50);
-        });
-        // Mobile menu
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                if (a.getAttribute('href').startsWith('#')) {
-                    e.preventDefault();
-                    document.querySelector(a.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
-                    mobileMenu?.classList.add('hidden');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+   
