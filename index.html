@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Your Own Profitable Online Business — No Inventory Needed</title>
+    <title>Dropshipper-Bisnis-Web</title>
 
-    <!-- Meta Pixel -->
+    <!-- === META PIXEL — ID: 1749308096341771 === -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -18,321 +18,61 @@
     fbq('init', '1749308096341771');
     fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://facebook.com/tr?id=1749308096341771&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1749308096341771&ev=PageView&noscript=1"/>
+    </noscript>
 
-    <!-- Google tag (gtag.js) — ID: G-CHSEF848XD -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CHSEF848XD"></script>
+    <!-- === GOOGLE ANALYTICS — ID BARU: G-5K3LBGVF50 === -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5K3LBGVF50"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-CHSEF848XD', {
-          send_page_view: true,
-          cookie_flags: 'SameSite=None;Secure'
-      });
+      gtag('config', 'G-5K3LBGVF50');
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#2563eb',
-                        secondary: '#4f46e5',
-                        accent: '#f97316',
-                        dark: '#1e293b',
-                    },
-                }
-            }
-        }
-    </script>
     <style>
-        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.15); }
-        .card-shadow { box-shadow: 0 10px 25px -5px rgba(0,0,0,0.08); }
+        * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
+        body {background:#f8fafc; color:#1e293b; line-height:1.6;}
+        .container {max-width:1200px; margin:0 auto; padding:20px;}
+        header {text-align:center; padding:60px 20px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:white; border-radius:12px; margin-bottom:40px;}
+        h1 {font-size:2.2rem; margin-bottom:15px;}
+        p.lead {font-size:1.2rem; max-width:700px; margin:0 auto 30px; opacity:0.95;}
+        .cta-button {display:inline-block; padding:16px 40px; background:#16a34a; color:white; font-size:1.1rem; font-weight:bold; text-decoration:none; border-radius:8px; transition:transform 0.2s, box-shadow 0.2s;}
+        .cta-button:hover {transform:translateY(-2px); box-shadow:0 6px 20px rgba(22,163,74,0.35);}
+        .features {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px; margin-bottom:50px;}
+        .feature-card {background:white; padding:30px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+        .feature-card h3 {color:#2563eb; margin-bottom:12px;}
+        footer {text-align:center; padding:30px; color:#64748b; font-size:0.9rem;}
     </style>
-
-    <!-- UTM Pass-Through — Carry parameters to all destination links -->
-    <script>
-    function getCurrentQueryParams() {
-        return new URLSearchParams(window.location.search);
-    }
-    function buildDestinationLink(baseUrl) {
-        const params = getCurrentQueryParams();
-        const destUrl = new URL(baseUrl);
-        for (const [key, value] of params.entries()) {
-            if (!destUrl.searchParams.has(key)) {
-                destUrl.searchParams.append(key, value);
-            }
-        }
-        return destUrl.href;
-    }
-    function trackAndNavigate(e, label, pos) {
-        e.preventDefault();
-        const link = e.currentTarget;
-        const finalUrl = buildDestinationLink(link.dataset.baseHref || link.href);
-        if (typeof gtag === "function") {
-            gtag("event", "click_cta", {
-                event_category: "Outbound Link",
-                event_label: label,
-                cta_position: pos,
-                destination_url: finalUrl
-            });
-        }
-        if (typeof fbq === "function") {
-            fbq("track", "Lead", {
-                cta_text: label,
-                cta_position: pos,
-                destination: finalUrl
-            });
-        }
-        setTimeout(() => {
-            window.open(finalUrl, "_blank", "noopener,noreferrer");
-        }, 150);
-    }
-    </script>
 </head>
-<body class="font-sans text-gray-700 bg-gray-50">
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="flex justify-between items-center">
-                <a href="#" class="text-xl font-bold text-white">
-                    <span class="text-accent">Profit</span>Partners
-                </a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-white hover:text-accent">About</a>
-                    <a href="#benefits" class="text-white hover:text-accent">Benefits</a>
-                    <a href="#how-it-works" class="text-white hover:text-accent">How It Works</a>
-                    <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                       data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                       onclick="trackAndNavigate(event, 'Get Started', 'navbar')"
-                       class="bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-full font-bold">
-                       Get Started
-                    </a>
-                </div>
-                <button id="menuBtn" class="md:hidden text-white text-2xl">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </div>
-        </div>
-        <div id="mobileMenu" class="md:hidden hidden bg-white shadow-lg absolute w-full mt-4 py-4 px-4">
-            <div class="flex flex-col space-y-4">
-                <a href="#about" class="text-gray-700">About</a>
-                <a href="#benefits" class="text-gray-700">Benefits</a>
-                <a href="#how-it-works" class="text-gray-700">How It Works</a>
-                <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   onclick="trackAndNavigate(event, 'Get Started', 'mobile_nav')"
-                   class="bg-accent text-white px-6 py-2 rounded-full font-bold text-center">
-                   Get Started Now
-                </a>
-            </div>
-        </div>
-    </nav>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dropshipper — Bisnis Web</h1>
+            <p class="lead">Mulai bisnis tanpa stok barang, jangkau pembeli luas, dan bangun pendapatan pasif bersama kami.</p>
+            <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34" class="cta-button" target="_blank">Mulai Sekarang</a>
+        </header>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center bg-gradient-to-br from-primary via-secondary to-indigo-700 text-white pt-20">
-        <div class="absolute inset-0 bg-black/25"></div>
-        <div class="container mx-auto px-4 md:px-6 relative z-10 py-20">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="space-y-8">
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight text-shadow">
-                        Build a Profitable Business<br>
-                        <span class="text-accent">Without Holding Inventory</span>
-                    </h1>
-                    <p class="text-lg opacity-90 leading-relaxed">
-                        Start selling high-demand products online — we handle storage, packaging, and shipping. You focus on marketing and earning. Low risk, unlimited potential.
-                    </p>
-                    <div class="flex flex-wrap gap-4">
-                        <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                           data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                           onclick="trackAndNavigate(event, 'Start Earning Today', 'hero_main')"
-                           class="bg-accent hover:bg-accent/90 text-white px-8 py-4 rounded-full font-bold text-lg">
-                           Start Earning Today <i class="fa fa-arrow-right ml-2"></i>
-                        </a>
-                        <a href="#how-it-works" class="bg-white/20 hover:bg-white/30 px-8 py-4 rounded-full font-bold text-lg">
-                           <i class="fa fa-play-circle mr-2"></i> See How It Works
-                        </a>
-                    </div>
-                    <div class="flex items-center space-x-6 pt-4">
-                        <div class="flex -space-x-3">
-                            <img src="https://picsum.photos/100/100?random=1" class="w-10 h-10 rounded-full border-2 border-white">
-                            <img src="https://picsum.photos/100/100?random=2" class="w-10 h-10 rounded-full border-2 border-white">
-                            <img src="https://picsum.photos/100/100?random=3" class="w-10 h-10 rounded-full border-2 border-white">
-                            <img src="https://picsum.photos/100/100?random=4" class="w-10 h-10 rounded-full border-2 border-white">
-                        </div>
-                        <div>
-                            <p class="font-bold">3,000+ Active Partners</p>
-                            <p class="text-sm opacity-80">Already earning income</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <img src="https://picsum.photos/800/600?random=15" class="rounded-xl shadow-2xl">
-                </div>
+        <section class="features">
+            <div class="feature-card">
+                <h3>✅ Tanpa Modal Besar</h3>
+                <p>Tidak perlu menyewa gudang atau membeli stok barang. Fokus pada pemasaran saja.</p>
             </div>
-        </div>
-    </section>
+            <div class="feature-card">
+                <h3>✅ Sistem Otomatis</h3>
+                <p>Pesanan diteruskan langsung ke pemasok. Anda cukup memantau perkembangan bisnis.</p>
+            </div>
+            <div class="feature-card">
+                <h3>✅ Potensi Berkembang</h3>
+                <p>Pelajari strategi promosi, jangkau pembeli lewat media sosial, dan tingkatkan penghasilan.</p>
+            </div>
+        </section>
 
-    <!-- About -->
-    <section id="about" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">About This Opportunity</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">A proven way to start an online business with minimal upfront cost</p>
-                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div><img src="https://picsum.photos/600/450?random=12" class="rounded-lg shadow-xl"></div>
-                <div class="space-y-6">
-                    <h3 class="text-2xl font-bold text-dark">Smart Business Model</h3>
-                    <p class="text-gray-600">Sell products without buying or storing inventory. We handle fulfillment — you keep the profit margin on every sale.</p>
-                    <p class="text-gray-600">Focus on marketing and growing your audience. We manage operations, shipping, and support.</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start"><i class="fa fa-check-circle text-accent mt-1 mr-3"></i>Verified quality products</li>
-                        <li class="flex items-start"><i class="fa fa-check-circle text-accent mt-1 mr-3"></i>Competitive pricing & attractive margins</li>
-                        <li class="flex items-start"><i class="fa fa-check-circle text-accent mt-1 mr-3"></i>Full support from experienced team</li>
-                    </ul>
-                    <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                       data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                       onclick="trackAndNavigate(event, 'Join Now', 'about_section')"
-                       class="inline-flex items-center bg-accent text-white px-6 py-3 rounded-full font-bold">
-                       Join Now <i class="fa fa-long-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section id="benefits" class="py-20 bg-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">Why Partner With Us?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Key advantages that make this opportunity stand out</p>
-                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-money text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Low Startup Cost</h3>
-                    <p class="text-gray-600">No inventory purchases, no warehouse rent. Start with minimal investment.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-truck text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Hassle-Free Shipping</h3>
-                    <p class="text-gray-600">We pack and ship directly to your customers — under your brand name.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-th-large text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Wide Product Selection</h3>
-                    <p class="text-gray-600">Access hundreds of trending products across high-demand categories.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-mobile-phone text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Manage From Any Device</h3>
-                    <p class="text-gray-600">Run your business from your phone — anytime, anywhere.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-line-chart text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Scalable Growth</h3>
-                    <p class="text-gray-600">Your income grows as you expand your reach. No income caps.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-8 card-shadow hover:-translate-y-2 transition-all">
-                    <div class="w-14 h-14 bg-accent/10 rounded-full flex items-center justify-center mb-5">
-                        <i class="fa fa-shield text-accent text-xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Trusted & Reliable</h3>
-                    <p class="text-gray-600">Verified system, clear payments, responsive support team.</p>
-                </div>
-            </div>
-            <div class="text-center mt-14">
-                <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   onclick="trackAndNavigate(event, 'Sign Up & Start', 'benefits_section')"
-                   class="inline-block bg-accent hover:bg-accent/90 text-white px-10 py-4 rounded-full font-bold text-lg">
-                   Sign Up & Start Today <i class="fa fa-rocket ml-2"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- How It Works -->
-    <section id="how-it-works" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-dark mb-4">How It Works</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Just 3 simple steps to start earning</p>
-                <div class="w-20 h-1 bg-accent mx-auto mt-6"></div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
-                    <div class="pt-6 pb-4">
-                        <i class="fa fa-user-plus text-5xl text-accent/80 mb-5"></i>
-                        <h3 class="text-xl font-bold mb-3">Create Your Account</h3>
-                        <p class="text-gray-600">Sign up for free and get instant access to our full product catalog.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl">2</div>
-                    <div class="pt-6 pb-4">
-                        <i class="fa fa-bullhorn text-5xl text-accent/80 mb-5"></i>
-                        <h3 class="text-xl font-bold mb-3">Promote Products</h3>
-                        <p class="text-gray-600">Share product links online. Set your own prices and keep the difference.</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-xl p-8 text-center card-shadow relative">
-                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-accent text-white rounded-full flex items-center justify-center font-bold text-xl">3</div>
-                    <div class="pt-6 pb-4">
-                        <i class="fa fa-gift text-5xl text-accent/80 mb-5"></i>
-                        <h3 class="text-xl font-bold mb-3">Get Paid</h3>
-                        <p class="text-gray-600">We handle fulfillment. You earn profit on every sale — straightforward.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-14">
-                <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   onclick="trackAndNavigate(event, 'Take The First Step', 'how_section')"
-                   class="inline-block bg-primary hover:bg-primary/90 text-white px-10 py-4 rounded-full font-bold text-lg">
-                   Take the First Step Today
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-20 bg-gradient-to-br from-accent to-orange-500 text-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-6">Ready to Start Your Journey?</h2>
-                <p class="text-xl mb-8 opacity-95">Don't wait — start building your income stream today.</p>
-                <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   data-base-href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34"
-                   onclick="trackAndNavigate(event, 'Get Started — Free', 'cta_bottom')"
-                   class="inline-block bg-white text-accent font-bold py-5 px-12 rounded-lg text-xl">
-                   Get Started — It's Free <i class="fa fa-paper-plane ml-2"></i>
-                </a>
-                <p class="mt-6 text-sm opacity-80">No signup fee &nbsp; Cancel anytime &nbsp; Full support included</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white pt-16 pb-8">
-        <div class="conta
+        <footer>
+            &copy; 2026 Dropshipper-Bisnis-Web — Semua Hak Dilindungi
+        </footer>
+    </div>
+</body>
+</html>
