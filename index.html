@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropshipper-Bisnis-Web</title>
+    <title>Dropshipper Business — Start Today</title>
 
     <!-- === META PIXEL — ID: 1443377467856499 === -->
     <script>
@@ -32,7 +32,7 @@
       gtag('js', new Date());
       gtag('config', 'G-5K3LBGVF50');
       
-      // Kirim parameter UTM ke GA agar terlacak dengan benar
+      // Pass UTM parameters for accurate tracking
       const params = new URLSearchParams(window.location.search);
       if (params.has('utm_source')) {
         gtag('set', 'campaign', {
@@ -47,13 +47,13 @@
         * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
         body {background:#f8fafc; color:#1e293b; line-height:1.6;}
         .container {max-width:1200px; margin:0 auto; padding:20px;}
-        header {text-align:center; padding:60px 20px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:white; border-radius:12px; margin-bottom:40px;}
+        header {text-align:center; padding:60px 20px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:#fff; border-radius:12px; margin-bottom:40px;}
         h1 {font-size:2.2rem; margin-bottom:15px;}
         p.lead {font-size:1.2rem; max-width:700px; margin:0 auto 30px; opacity:0.95;}
-        .cta-button {display:inline-block; padding:16px 40px; background:#16a34a; color:white; font-size:1.1rem; font-weight:bold; text-decoration:none; border-radius:8px; transition:transform 0.2s, box-shadow 0.2s;}
+        .cta-button {display:inline-block; padding:16px 40px; background:#16a34a; color:#fff; font-size:1.1rem; font-weight:bold; text-decoration:none; border-radius:8px; transition:transform 0.2s, box-shadow 0.2s;}
         .cta-button:hover {transform:translateY(-2px); box-shadow:0 6px 20px rgba(22,163,74,0.35);}
         .features {display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:25px; margin-bottom:50px;}
-        .feature-card {background:white; padding:30px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
+        .feature-card {background:#fff; padding:30px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.08);}
         .feature-card h3 {color:#2563eb; margin-bottom:12px;}
         footer {text-align:center; padding:30px; color:#64748b; font-size:0.9rem;}
     </style>
@@ -61,39 +61,37 @@
 <body>
     <div class="container">
         <header>
-            <h1>Dropshipper — Bisnis Web</h1>
-            <p class="lead">Mulai bisnis tanpa stok barang, jangkau pembeli luas, dan bangun pendapatan pasif bersama kami.</p>
+            <h1>Build Your Dropshipping Business</h1>
+            <p class="lead">Start selling without holding inventory, reach more customers, and build a sustainable passive income stream.</p>
             <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&affid=34" 
-               class="cta-button" target="_blank" id="mainCta">Mulai Sekarang</a>
+               class="cta-button" target="_blank" id="mainCta">Get Started Now</a>
         </header>
 
         <section class="features">
             <div class="feature-card">
-                <h3>✅ Tanpa Modal Besar</h3>
-                <p>Tidak perlu menyewa gudang atau membeli stok barang. Fokus pada pemasaran saja.</p>
+                <h3>✅ No Large Capital Needed</h3>
+                <p>No warehouse rental, no upfront stock purchases. Focus entirely on marketing and growing your business.</p>
             </div>
             <div class="feature-card">
-                <h3>✅ Sistem Otomatis</h3>
-                <p>Pesanan diteruskan langsung ke pemasok. Anda cukup memantau perkembangan bisnis.</p>
+                <h3>✅ Fully Automated System</h3>
+                <p>Orders are sent directly to your supplier. You simply track progress and enjoy the results.</p>
             </div>
             <div class="feature-card">
-                <h3>✅ Potensi Berkembang</h3>
-                <p>Pelajari strategi promosi, jangkau pembeli lewat media sosial, dan tingkatkan penghasilan.</p>
+                <h3>✅ Unlimited Growth Potential</h3>
+                <p>Learn proven promotion strategies, expand your reach across social media, and steadily increase your earnings.</p>
             </div>
         </section>
 
         <footer>
-            &copy; 2026 Dropshipper-Bisnis-Web — Semua Hak Dilindungi
+            &copy; 2026 Dropshipper Business — All Rights Reserved
         </footer>
     </div>
 
-    <!-- === PENERUS PARAMETER UTM KE TOMBOL CTA === -->
+    <!-- === FORWARD UTM PARAMETERS TO CTA LINK === -->
     <script>
-        // Ambil parameter UTM dari tautan saat ini
         const urlParams = window.location.search;
         if (urlParams) {
             const cta = document.getElementById('mainCta');
-            // Tambahkan parameter ke tautan CTA agar pelacakan tetap berlanjut
             cta.href = cta.href + (cta.href.includes('?') ? '&' : '?') + urlParams.slice(1);
         }
     </script>
