@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropshipper-Bisnis-Web</title>
 
-    <!-- === META PIXEL — ID BARU: 1443377467856499 === -->
+    <!-- === META PIXEL — ID: 1443377467856499 === -->
     <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -31,6 +31,16 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-5K3LBGVF50');
+      
+      // Kirim parameter UTM ke GA agar terlacak dengan benar
+      const params = new URLSearchParams(window.location.search);
+      if (params.has('utm_source')) {
+        gtag('set', 'campaign', {
+          source: params.get('utm_source'),
+          medium: params.get('utm_medium'),
+          name: params.get('utm_campaign')
+        });
+      }
     </script>
 
     <style>
@@ -53,7 +63,8 @@
         <header>
             <h1>Dropshipper — Bisnis Web</h1>
             <p class="lead">Mulai bisnis tanpa stok barang, jangkau pembeli luas, dan bangun pendapatan pasif bersama kami.</p>
-            <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&utm_source=34&affid=34" class="cta-button" target="_blank">Mulai Sekarang</a>
+            <a href="https://pbsmethod.com/fblive/?_ef_transaction_id=2bd804b8334b48e1a411d869aa3a7aef&sub1=4&affid=34" 
+               class="cta-button" target="_blank" id="mainCta">Mulai Sekarang</a>
         </header>
 
         <section class="features">
@@ -75,5 +86,16 @@
             &copy; 2026 Dropshipper-Bisnis-Web — Semua Hak Dilindungi
         </footer>
     </div>
+
+    <!-- === PENERUS PARAMETER UTM KE TOMBOL CTA === -->
+    <script>
+        // Ambil parameter UTM dari tautan saat ini
+        const urlParams = window.location.search;
+        if (urlParams) {
+            const cta = document.getElementById('mainCta');
+            // Tambahkan parameter ke tautan CTA agar pelacakan tetap berlanjut
+            cta.href = cta.href + (cta.href.includes('?') ? '&' : '?') + urlParams.slice(1);
+        }
+    </script>
 </body>
 </html>
