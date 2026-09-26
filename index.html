@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health & Grocery Assistance — Check Eligibility</title>
 
+    <!-- === GOOGLE TAG MANAGER — HEAD === -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PN9X3PV7');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- === META PIXEL — ID: 2079814329294912 === -->
     <script>
     !function(f,b,e,v,n,t,s)
@@ -46,43 +54,39 @@
         * {margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif;}
         body {background:#f0f7ff; color:#1e293b; line-height:1.6;}
         .container {max-width:960px; margin:0 auto;}
-
-        /* === HERO SECTION — Mengikuti Gambar === */
         .hero {background:linear-gradient(180deg, #e6f0fa 0%, #ffffff 100%); padding:40px 20px; text-align:center; position:relative; overflow:hidden;}
         .hero::before {content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg, #b91c1c, #2563eb, #b91c1c);}
-        
         .hero-top {color:#1e40af; font-style:italic; font-size:1.2rem; margin-bottom:15px;}
         .hero h1 {font-size:2rem; line-height:1.3; margin-bottom:20px; color:#0f172a;}
         .hero h1 span {color:#dc2626;}
         .hero p.lead {font-size:1.1rem; color:#475569; max-width:700px; margin:0 auto 30px;}
-
         .benefits-row {display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:20px; margin:35px 0; text-align:left;}
         .benefit-item {display:flex; gap:12px; align-items:flex-start;}
         .benefit-icon {width:40px; height:40px; border-radius:50%; background:#dbeafe; display:flex; align-items:center; justify-content:center; color:#1d4ed8; font-weight:bold; flex-shrink:0; font-size:1.2rem;}
         .benefit-text h3 {font-size:1rem; color:#1e40af; margin-bottom:4px;}
         .benefit-text p {font-size:0.9rem; color:#64748b;}
-
         .divider {border:none; border-top:3px solid #bfdbfe; margin:40px 0;}
-
         .why-section {background:#eff6ff; border-radius:16px; padding:30px 20px; margin-bottom:30px;}
         .why-section h2 {text-align:center; color:#1e40af; margin-bottom:25px; font-size:1.4rem;}
         .why-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:20px; text-align:center;}
         .why-card {padding:15px;}
         .why-icon {font-size:2rem; color:#2563eb; margin-bottom:8px;}
         .why-card h4 {font-size:0.95rem; color:#334155;}
-
         .cta-section {text-align:center; padding:10px 20px 40px;}
         .cta-button {display:inline-block; padding:16px 40px; background:linear-gradient(90deg, #dc2626, #ea580c); color:#fff; font-size:1.2rem; font-weight:bold; text-decoration:none; border-radius:12px; transition:transform 0.2s, box-shadow 0.2s; margin-bottom:10px;}
         .cta-button:hover {transform:translateY(-2px); box-shadow:0 6px 20px rgba(220,38,38,0.3);}
         .cta-note {color:#64748b; font-size:0.9rem; margin-bottom:20px;}
         .link-box {background:#eff6ff; border:2px solid #bfdbfe; border-radius:10px; padding:12px; display:inline-block; word-break:break-all; color:#1e40af; font-weight:500;}
-
         footer {text-align:center; padding:25px; color:#64748b; font-size:0.85rem; border-top:1px solid #dbeafe; margin-top:20px;}
     </style>
 </head>
 <body>
+    <!-- === GOOGLE TAG MANAGER (NOSCRIPT) — TEPAT SETELAH <body> === -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN9X3PV7"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <div class="container">
-        <!-- === HERO — Mengikuti Gambar === -->
         <section class="hero">
             <p class="hero-top">Health & Food Support for a Brighter Tomorrow ❤️</p>
             <h1>Found this eligibility checker for<br><span>grocery assistance</span> — hope it helps someone!</h1>
@@ -122,7 +126,6 @@
 
         <hr class="divider">
 
-        <!-- === WHY SECTION === -->
         <section class="why-section">
             <h2>Why Choose Our Health Insurance?</h2>
             <div class="why-grid">
@@ -140,12 +143,11 @@
                 </div>
                 <div class="why-card">
                     <div class="why-icon">🛡️</div>
-                    <h4>Peace of Mind for You & Your Family</h4>
+                    <h4>Peace of Mind for You & Family</h4>
                 </div>
             </div>
         </section>
 
-        <!-- === CTA SECTION === -->
         <section class="cta-section">
             <a href="https://app.glitchy.com/offers/5247" class="cta-button" id="mainCta">CHECK YOUR ELIGIBILITY NOW →</a>
             <p class="cta-note">Simple. Fast. Secure.</p>
@@ -175,6 +177,9 @@
                     event_category: 'CTA',
                     event_label: 'Check Eligibility'
                 });
+            }
+            if (typeof dataLayer !== 'undefined') {
+                dataLayer.push({'event': 'cta_click', 'cta_label': 'Check Eligibility'});
             }
         });
     </script>
