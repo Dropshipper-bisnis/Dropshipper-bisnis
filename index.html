@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZipRewards — Earn Rewards</title>
+    <title>Earn Rewards — GiftClick</title>
 
     <!-- ==================== META PIXEL ==================== -->
 <script>
@@ -38,6 +38,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PN9X3PV7');</script>
 
+    <!-- ==================== PENERUS PARAMETER PELACAKAN ==================== -->
+<script>
+(function () {
+  var OPEN = '{' + '{';
+  var KEYS = ['fbclid','ad_id','adset_id','campaign_id','campaign_name','placement','source','utm_source','utm_medium','utm_campaign','utm_content'];
+  function isMacro(v){ return !v || v.indexOf(OPEN) !== -1 || v.indexOf('%7B%7B') !== -1; }
+  function grab(){
+    var s = {}, qs = new URLSearchParams(location.search);
+    KEYS.forEach(function (k) {
+      var v = qs.get(k);
+      if (v && !isMacro(v)) sessionStorage.setItem('q_' + k, v);
+      var saved = sessionStorage.getItem('q_' + k);
+      if (saved && !isMacro(saved)) s[k] = saved;
+    });
+    return s;
+  }
+  grab();
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="giftclick.org"]');
+    if (!a) return;
+    var s = grab();
+    try {
+      var u = new URL(a.href, location.href);
+      Object.keys(s).forEach(function (k) { 
+        if (!u.searchParams.has(k)) u.searchParams.set(k, s[k]); 
+      });
+      a.href = u.toString();
+    } catch (err) {}
+  }, true);
+})();
+</script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
         body { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; min-height: 100vh; }
@@ -61,24 +93,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="container">
-        <h1>🇺🇸 Earn $5.00 Today</h1>
-        <p class="subtitle">100% Free • United States Only</p>
+        <h1>🎁 Earn Free Rewards</h1>
+        <p class="subtitle">100% Free • Available Now</p>
 
-        <!-- ========== SATU-SATUNYA CTA ========== -->
+        <!-- ========== CTA UTAMA — GIFTCLICK ========== -->
         <div class="offer-card">
-            <div class="offer-title">💰 ZipRewards — US Exclusive</div>
-            <div class="offer-payout">$5.00 Payout</div>
-            <div class="offer-region">Available only for United States residents</div>
-            <a href="https://app.glitchy.com/offers/5101?utm_source=meta&utm_medium=video_ad&utm_campaign=rewards_oct&utm_content=benjamin_single_cta" 
+            <div class="offer-title">✨ GiftClick — Get Your Reward</div>
+            <div class="offer-payout">Exclusive Offer</div>
+            <div class="offer-region">Special promotion — don't miss out!</div>
+            <a href="https://giftclick.org/aff_c?offer_id=4889&aff_id=203181&source=ig-story" 
                target="_blank" class="cta-button"
                onclick="fbq('track', 'Lead')">
-                Download Now →
+                Claim Your Reward →
             </a>
         </div>
 
         <p class="footer">
             © 2026 Dropshipper Bisnis<br>
-            Traffic must be from real users only — no bots or forced clicks
+            Traffic from real users only — no bots or forced clicks
         </p>
     </div>
 
