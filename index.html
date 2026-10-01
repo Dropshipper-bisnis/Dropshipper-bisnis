@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earn Rewards — Glitchy</title>
+    <title>Earn Rewards</title>
 
     <!-- ==================== META PIXEL ==================== -->
 <script>
@@ -38,15 +38,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PN9X3PV7');</script>
 
-    <!-- ==================== PENERUS PARAMETER PELACAKAN ==================== -->
+    <!-- ================================================== -->
+    <!-- KODE PENERUS PARAMETER — PERSIS SESUAI FOTO ✅ -->
+    <!-- ================================================== -->
 <script>
-(function () {
-  var OPEN = '{' + '{';
-  var KEYS = ['fbclid','ad_id','adset_id','campaign_id','campaign_name','placement','source','utm_source','utm_medium','utm_campaign','utm_content'];
-  function isMacro(v){ return !v || v.indexOf(OPEN) !== -1 || v.indexOf('%7B%7B') !== -1; }
-  function grab(){
+(function() {
+  var OPEN = '{{';
+  var KEYS = ['fbclid','ad_id','adset_id','campaign_id','campaign_name','placement','source'];
+  function isMacro(v) { return !v || v.indexOf(OPEN) !== -1 || v.indexOf('%7B%7B') !== -1; }
+  function grab() {
     var s = {}, qs = new URLSearchParams(location.search);
-    KEYS.forEach(function (k) {
+    KEYS.forEach(function(k) {
       var v = qs.get(k);
       if (v && !isMacro(v)) sessionStorage.setItem('q_' + k, v);
       var saved = sessionStorage.getItem('q_' + k);
@@ -55,15 +57,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     return s;
   }
   grab();
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest && e.target.closest('a[href*="glitchy.com"]');
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest && e.target.closest('a[href*="aff_c"]');
     if (!a) return;
     var s = grab();
     try {
       var u = new URL(a.href, location.href);
-      Object.keys(s).forEach(function (k) { 
-        if (!u.searchParams.has(k)) u.searchParams.set(k, s[k]); 
-      });
+      Object.keys(s).forEach(function(k) { u.searchParams.set(k, s[k]); });
       a.href = u.toString();
     } catch (err) {}
   }, true);
@@ -94,14 +94,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="container">
         <h1>🎁 Earn Your Reward</h1>
-        <p class="subtitle">100% Free • Trusted Offers</p>
+        <p class="subtitle">100% Free • Don't Miss Out</p>
 
-        <!-- ========== CTA UTAMA — GLITCHY 4889 ========== -->
+        <!-- ========== CTA UTAMA — SESUAI TAUTAN DI FOTO ✅ ========== -->
         <div class="offer-card">
-            <div class="offer-title">✨ Exclusive Reward Offer</div>
-            <div class="offer-payout">Limited Time</div>
-            <div class="offer-region">Available for eligible users</div>
-            <a href="https://app.glitchy.com/offers/4889?utm_source=meta&utm_medium=video_ad&utm_campaign=rewards_oct&utm_content=offer_4889" 
+            <div class="offer-title">✨ Exclusive Offer</div>
+            <div class="offer-payout">Limited Time Available</div>
+            <div class="offer-region">For Eligible Users</div>
+            <a href="https://linkthem.net/aff_c?offer_id=4889&aff_id=203181" 
                target="_blank" class="cta-button"
                onclick="fbq('track', 'Lead')">
                 Get Started →
@@ -110,7 +110,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <p class="footer">
             © 2026 Dropshipper Bisnis<br>
-            Traffic must be from real users only — no bots or forced clicks
+            Traffic from real users only — no bots or forced clicks
         </p>
     </div>
 
