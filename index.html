@@ -3,114 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Earn Rewards</title>
+    <title>EarnIn — Cash Advance | Get Paid Early</title>
 
-    <!-- ==================== META PIXEL ==================== -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1092218546517379');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1092218546517379&ev=PageView&noscript=1"
-/></noscript>
-
-    <!-- ==================== GOOGLE ANALYTICS ==================== -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5K3LBGVF50"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5K3LBGVF50');
-</script>
-
-    <!-- ==================== GOOGLE TAG MANAGER ==================== -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PN9X3PV7');</script>
-
-    <!-- ================================================== -->
-    <!-- KODE PENERUS PARAMETER — PERSIS SESUAI FOTO ✅ -->
-    <!-- ================================================== -->
-<script>
-(function() {
-  var OPEN = '{{';
-  var KEYS = ['fbclid','ad_id','adset_id','campaign_id','campaign_name','placement','source'];
-  function isMacro(v) { return !v || v.indexOf(OPEN) !== -1 || v.indexOf('%7B%7B') !== -1; }
-  function grab() {
-    var s = {}, qs = new URLSearchParams(location.search);
-    KEYS.forEach(function(k) {
-      var v = qs.get(k);
-      if (v && !isMacro(v)) sessionStorage.setItem('q_' + k, v);
-      var saved = sessionStorage.getItem('q_' + k);
-      if (saved && !isMacro(saved)) s[k] = saved;
-    });
-    return s;
-  }
-  grab();
-  document.addEventListener('click', function(e) {
-    var a = e.target.closest && e.target.closest('a[href*="aff_c"]');
-    if (!a) return;
-    var s = grab();
-    try {
-      var u = new URL(a.href, location.href);
-      Object.keys(s).forEach(function(k) { u.searchParams.set(k, s[k]); });
-      a.href = u.toString();
-    } catch (err) {}
-  }, true);
-})();
-</script>
+    <!-- Meta Pixel -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1092218546517379');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1092218546517379&ev=PageView&noscript=1"/></noscript>
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-        body { background: linear-gradient(135deg, #0f172a, #1e293b); color: white; min-height: 100vh; }
-        .container { max-width: 420px; margin: 0 auto; padding: 60px 20px; text-align: center; }
-        h1 { font-size: 32px; margin-bottom: 12px; color: #fbbf24; }
-        .subtitle { font-size: 18px; color: #cbd5e1; margin-bottom: 40px; line-height: 1.5; }
-        .offer-card { background: rgba(255,255,255,0.08); border-radius: 20px; padding: 40px 30px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
-        .offer-card:hover { transform: translateY(-5px); border-color: #fbbf24; }
-        .offer-title { font-size: 22px; font-weight: bold; margin-bottom: 10px; }
-        .offer-payout { font-size: 28px; color: #4ade80; font-weight: bold; margin-bottom: 12px; }
-        .offer-region { font-size: 15px; color: #94a3b8; margin-bottom: 30px; }
-        .cta-button { display: block; background: linear-gradient(90deg, #f59e0b, #d97706); color: white; text-decoration: none; padding: 18px; border-radius: 12px; font-weight: bold; font-size: 18px; transition: box-shadow 0.3s; }
-        .cta-button:hover { box-shadow: 0 0 25px rgba(251,191,36,0.5); }
-        .footer { margin-top: 40px; font-size: 12px; color: #64748b; line-height: 1.6; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1.2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #10b981;
+            color: #fff;
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 0.8rem;
+        }
+
+        .payout {
+            color: #10b981;
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .us-only {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: #2563eb;
+            padding: 0.5rem 1.2rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 1.2rem;
+            padding: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .card ul {
+            list-style: none;
+        }
+
+        .card li {
+            padding: 0.9rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 1rem;
+        }
+
+        .card li:last-child {
+            border-bottom: none;
+        }
+
+        .cta {
+            display: block;
+            background: linear-gradient(135deg, #6c5ce7, #5a4bdb);
+            color: #fff;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.2rem;
+            padding: 1rem;
+            border-radius: 0.9rem;
+            box-shadow: 0 10px 25px rgba(108, 92, 231, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(108, 92, 231, 0.45);
+        }
+
+        .note {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.6rem;
+            }
+
+            .card {
+                padding: 1.4rem;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <!-- GTM noscript — setelah <body> -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PN9X3PV7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
     <div class="container">
-        <h1>🎁 Earn Your Reward</h1>
-        <p class="subtitle">100% Free • Don't Miss Out</p>
+        <span class="badge">✅ APPROVED OFFER</span>
 
-        <!-- ========== CTA UTAMA — SESUAI TAUTAN DI FOTO ✅ ========== -->
-        <div class="offer-card">
-            <div class="offer-title">✨ Exclusive Offer</div>
-            <div class="offer-payout">Limited Time Available</div>
-            <div class="offer-region">For Eligible Users</div>
-            <a href="https://linkthem.net/aff_c?offer_id=4889&aff_id=203181" 
-               target="_blank" class="cta-button"
-               onclick="fbq('track', 'Lead')">
-                Get Started →
-            </a>
+        <h1>EarnIn — Cash Advance</h1>
+
+            🇺🇸 Available Only in the United States
         </div>
 
-        <p class="footer">
-            © 2026 Dropshipper Bisnis<br>
-            Traffic from real users only — no bots or forced clicks
+        <div class="card">
+            <ul>
+                <li>✅ Access wages you’ve already earned</li>
+                <li>✅ Up to $500 — No interest, no hidden fees</li>
+                <li>✅ No credit check</li>
+                <li>✅ Fast approval and trusted by millions</li>
+            </ul>
+        </div>
+
+        <!-- === TAUTAN CTA SUDAH DIPASANG === -->
+        <a href="https://linkthem.net/aff_c?offer_id=4889&aff_id=203181&source=ig-story"
+           class="cta"
+           target="_blank"
+           rel="noopener noreferrer">
+            🚀 Get Early Access →
+        </a>
+
+        <p class="note">
+            EarnIn is an earned-wage-access application.<br>
+            Must be a US resident to qualify. Terms apply.
         </p>
     </div>
 
